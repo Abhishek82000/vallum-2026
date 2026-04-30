@@ -356,24 +356,31 @@ const fixedNotes = [
   "Portfolio Managers are advised to also refer to the illustrations provided in Annexure 4A of Master Circular for Portfolio Managers dated June 07, 2024.",
 ];
 const hybridNotes = [
-  "Management fee is assumed to be charged annually.",
-  "High Water Mark (HWM) for Year 1 is the capital invested. From Year 2 onwards, if performance fee is charged, it is the year-end closing value after all charges.",
-  "Hurdle rate is calculated on the HWM or previous year closing capital (whichever is higher).",
-  "Hurdle rate is prorated if the performance fee period is less than 1 year or if there are inflows/outflows.",
-  "The illustration shows HWM to be carried forward in different scenarios for equal and fair treatment to the investor.",
+  "In the illustration, Management fee is assumed to be charged annually. However, the Portfolio Manager can charge fee at any frequency i.e. Daily, Monthly, Quarterly, Semi-annually, Annually or at any other frequency as defined in the PMS agreement and as permitted under SEBI regulations.",
+  "Portfolio Manager can charge Management Fee on Average portfolio value for the management fee period or the closing portfolio value or in any other manner as defined in the PMS agreement.",
   "Returns are assumed to be generated linearly through the year.",
-  "All fees and charges are subject to GST.",
-  "Portfolio Managers are advised to refer to Annexure 4A of SEBI Master Circular for Portfolio Managers dated June 07, 2024.",
+  "Other Expenses includes Account Opening charges, stamp duty /Audit Fee/ Bank charges / Fund Accounting charges / Custody Fee / demat charges or other miscellaneous expense",
+  "Brokerage and transaction cost for the illustration purpose is charged on the Average AUM. However, Brokerage and Transaction cost are charged on basis the actuals trades.",
+  "All Fees and charges are subject to GST.",
+  "For this illustration, High Water Mark for the 1st Year is the Capital invested and from second year onwards if performance fee is charged, it’s the year end closing value after all charges and fees, else it remains the same. However, in actual, High Water Mark is defined in the PMS agreement and may differ from this illustration.",
+  "For this illustration, Hurdle rate is calculated on Higher of (HWM or previous year closing capital). However, in actual Hurdle Rate of return is defined in the PMS agreement and may differ from this illustration.",
+  "Hurdle rate is prorated in case the performance fee period is less than 1 year OR if there are inflow/outflows from the portfolio",
+  "The above illustration shows the High Water Mark to be carried forward in different scenario for equal and fair treatment to the investor.",
+  "This is only a generic illustration, each portfolio manager can modify the illustration as per the terms and condition of their PMS agreement.",
+  "Portfolio Managers are advised to also refer to the illustrations provided in Annexure 4A of Master Circular for Portfolio Managers dated June 07, 2024. ",
 ];
 const multiNotes = [
-  "Management fee is charged annually on Average AUM.",
-  "Hurdle NAV is compounded annually at the hurdle rate. In Year 1, it is the initial capital × (1 + hurdle rate). In subsequent years, it is the greater of (previous portfolio value × (1 + hurdle rate)) and (previous hurdle NAV × (1 + hurdle rate)).",
-  "High Water Mark in any year is the maximum closing value of the portfolio (before performance fee) in all preceding years.",
-  "No catch-up fee for the client in this illustration.",
-  "Performance fee is assumed to be charged from the portfolio itself.",
-  "Hurdle rate is prorated in case the performance fee period is less than 1 year or if there are inflows/outflows.",
-  "Returns are assumed to be generated linearly through the year.",
-  "All fees and charges are subject to GST.",
+  "In the illustration, Management fee is assumed to be charged annually. However, the Portfolio Manager may charge fee at any other frequency (i.e. Monthly, Quarterly, Semi-annually, Annually) as defined in the PMS agreement and permitted under SEBI regulations.",
+    "For this illustration, the Hurdle NAV is compounded annually at the Hurdle Rate. In the first year, the Hurdle NAV is calculated by applying the Hurdle Rate to the Initial Capital Contribution. For subsequent years, the Hurdle NAV is calculated as the greater of the Value of the Portfolio before applying the Performance Fee, after applying the Hurdle Rate, or the previous year’s Hurdle NAV compounded by the Hurdle Rate. This approach ensures that the Hurdle NAV is properly compounded while accounting for the performance of the portfolio.",
+    "For this illustration, High Water Mark in any year is the maximum closing value of the portfolio (before performance fee) in all the preceding financial years.",
+    "In this example, there is no catch up of fee for the customer.",
+    "Hurdle rate is prorated in case the performance fee period is less than 1 year OR if there are inflow/outflows from the portfolio.",
+    "The above calculator assumes that the performance fee is charged from the portfolio itself.",
+    "Returns are assumed to be generated linearly through the year.",
+    "Other Expenses includes Account Opening charges, stamp duty / Audit Fee / Bank charges / Fund Accounting charges / Custody Fee / demat charges or other miscellaneous expense.",
+    "Brokerage and transaction cost for the illustration purpose is charged on the Average AUM. However, Brokerage and Transaction cost are charged on basis the actual trades.",
+    "All Fees and charges are subject to GST.",
+    "This is only a generic illustration, each portfolio manager can modify the illustration as per the terms and condition of their PMS agreement."
 ];
 
 /* ── MAIN APP ───────────────────────────────────────── */
