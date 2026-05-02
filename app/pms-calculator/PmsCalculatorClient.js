@@ -189,7 +189,7 @@ function TabHybrid({ varOnly = false }) {
         <Row label="High Water Mark Value (HWM) (Capital contributed for 1st year and second year onwards as defined in the PMS agreement." formula="[x] = capital (yr 1)" values={V("x")} />
         <Row label="Hurdle Rate of return or as defined in the PMS agreement" formula="[xi] = i × e" values={V("xi")} />
         <Row label="Gross Value of the Portfolio before Performance fee is greater than High Water Mark Value + Hurdle rate of return" formula='[xii] = ix > (x + xi) → "Yes" else "No P.Fee"' values={V("xii")} isStr />
-        <SectionHeader label="If Yes, proceed to performance fee calculation else 0 (zero) performance fee for the period)" />
+        <SectionHeader/>
         <Row label="Portfolio return subject of Performance Fee" formula="[xiii] = ix − x − xi (if applicable)" values={V("xiii")} />
         <Row label="Performance fee" formula="[xiv] = xiii × d" values={V("xiv")} isRed />
         <Row label="Net value of the Portfolio at the end of the year after all fees and expenses" formula="[xv] = ix + xiv" values={V("xv")} isBold isGreen />
@@ -285,7 +285,7 @@ function TabMultiYear() {
         <PctRow label="Profit share of the PMS" formula="[xiii] = xii × d  (performance fee rate applied to excess)" values={V("xiii")} />
         <Row label="Profit Share To be taken by PMS" formula="[xiv] = (ix − xi) × d  (if applicable, else 0)" values={V("xiv")} isRed />
         <Row label="Is the Performance Fee charged?" formula='[xvi] = ix > xi → "Yes" else "No P.Fee"' values={V("xvi")} isStr />
-        <SectionHeader label="If Yes, proceed to performance fee calculation else 0 (zero) performance fee for the period" />
+        <SectionHeader/>
         <Row label="Net value of the Portfolio at the end of the year after all fees and expenses" formula="[xvii] = ix − xiv" values={V("xvii")} isBold isGreen />
         <PctRow label="% Portfolio Return (for the year)" formula="[xviii] = (xvii − i) / i" values={V("xviii")} />
         <PctRow label="Portfolio XIRR (Annualised CAGR since inception)" formula="[xirr] = (xvii / initial capital)^(1/n) − 1" values={V("xirr")} />
