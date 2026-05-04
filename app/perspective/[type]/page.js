@@ -65,7 +65,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: displayTitle,
       description: meta.page_meta_desc || defaultMetadata.description,
-      url: `${defaultMetadata.url}/blog/${type}`,
+      url: `${defaultMetadata.url}/perspective/${type}`,
       type: "website",
       images: [{ url: meta.page_header_image || defaultMetadata.image }],
     },
@@ -75,7 +75,7 @@ export async function generateMetadata({ params }) {
       images: [meta.page_header_image || defaultMetadata.image],
     },
     alternates: {
-      canonical: `${defaultMetadata.url}/blog/${type}`,
+      canonical: `${defaultMetadata.url}/perspective/${type}`,
     },
   };
 }

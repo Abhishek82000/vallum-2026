@@ -17,7 +17,7 @@ export default function BlogDetailClient({ blogData, relatedBlogs, type }) {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb bg-transparent p-0 mb-0">
                     <li className="breadcrumb-item"><Link href="javascript:void(0);">Perspectives</Link></li>
-                    <li className="breadcrumb-item"><Link href={`/blog/${type || 'all'}`}>{type?.toUpperCase() || 'Category'}</Link></li>
+                    <li className="breadcrumb-item"><Link href={`/perspective/${type || 'all'}`}>{type?.toUpperCase() || 'Category'}</Link></li>
                     <li className="breadcrumb-item" aria-current="page">{blogData.blog_name}</li>
                   </ol>
                 </nav>
@@ -88,7 +88,7 @@ export default function BlogDetailClient({ blogData, relatedBlogs, type }) {
                           <div className="col-8">
                             <div className="card-body p-2">
                               <Link
-                                href={`/blog/${type || "all"}/${rel.blog_slug}`}
+                                href={`/perspective/${type || "all"}/${rel.blog_slug}`}
                                 className="text-decoration-none text-dark"
                               >
                                 <h6 className="card-title mb-1 small fw-bold text-truncate-2">

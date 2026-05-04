@@ -199,7 +199,7 @@ export default function BlogListClient({ initialData, currentCategory = null }) 
     if (!url) return "#";
     const urlObj = new URL(url);
     const pageNum = urlObj.searchParams.get("page");
-    return `/blog/${currentType}?page=${pageNum}`;
+    return `/perspective/${currentType}?page=${pageNum}`;
   };
 
   const breadcrumbData = {
@@ -268,7 +268,7 @@ export default function BlogListClient({ initialData, currentCategory = null }) 
                     className={currentType === item.slug ? "li-active li-div" : "li-div"}
                   >
                     <Link
-                      href={`/blog/${item.slug}`}
+                      href={`/perspective/${item.slug}`}
                       className={currentType === item.slug ? "active" : ""}
                     >
                       {item.label}
@@ -285,7 +285,7 @@ export default function BlogListClient({ initialData, currentCategory = null }) 
               <h5 className="mb-2">Filter by Category</h5>
               <ul className="sidebar-events-ul">
                 <li className={currentType === "all" ? "li-active" : ""}>
-                  <Link href="/blog/all" className={currentType === "all" ? "active" : ""}>
+                  <Link href="/perspective/all" className={currentType === "all" ? "active" : ""}>
                     All Categories
                   </Link>
                 </li>
@@ -295,7 +295,7 @@ export default function BlogListClient({ initialData, currentCategory = null }) 
                     className={currentCategory === cat.category_slug ? "li-active" : ""}
                   >
                     <Link
-                      href={`/blog/${currentType}/category/${cat.category_slug}`}
+                      href={`/perspective/${currentType}/category/${cat.category_slug}`}
                       className={currentCategory === cat.category_slug ? "active" : ""}
                     >
                       {cat.category_name}
@@ -333,7 +333,7 @@ export default function BlogListClient({ initialData, currentCategory = null }) 
                                 ? blog.blog_pdf
                                 : currentType === "weekend-reading"
                                 ? blog.blog_weekend_link
-                                : `/blog/${currentType}/${blog.blog_slug}`
+                                : `/perspective/${currentType}/${blog.blog_slug}`
                             }
                             download={
                               currentType === "stakeholders-letters" && blog.blog_pdf !== ""
@@ -358,7 +358,7 @@ export default function BlogListClient({ initialData, currentCategory = null }) 
                                 ? blog.blog_pdf
                                 : currentType === "weekend-reading"
                                 ? blog.blog_weekend_link
-                                : `/blog/${currentType}/${blog.blog_slug}`
+                                : `/perspective/${currentType}/${blog.blog_slug}`
                             }
                             download={
                               currentType === "stakeholders-letters" && blog.blog_pdf !== ""
@@ -393,7 +393,7 @@ export default function BlogListClient({ initialData, currentCategory = null }) 
                                 ? blog.blog_pdf
                                 : currentType === "weekend-reading"
                                 ? blog.blog_weekend_link
-                                : `/blog/${currentType}/${blog.blog_slug}`
+                                : `/perspective/${currentType}/${blog.blog_slug}`
                             }
                             download={
                               currentType === "stakeholders-letters" && blog.blog_pdf !== ""
