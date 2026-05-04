@@ -433,7 +433,7 @@ export default function ContactUsClient() {
                             className="pflag-img"
                             onError={(e) => e.target.style.display = "none"}
                           />
-                          <span className="pcode">{form.contact_phonecode}</span>
+                          <span className="pcode">{form.contact_phonecode} ({form.contact_phoneflag})</span>
                           <span className="parrow">▼</span>
                         </div>
                         {/* Invisible native select overlays the display */}
@@ -443,15 +443,15 @@ export default function ContactUsClient() {
                           onChange={handlePhoneCode}
                           aria-label="Country code"
                         >
-                          <option value="+91" data-iso="IN">🇮🇳 IN +91 — India</option>
+                          <option value="+91" data-iso="IN">IN +91 — India</option>
                           {countries.map(c => (
                             <option
                               key={c.country_id}
                               value={c.country_phonecode}
-                              data-iso={c.country_sortname || ""}
+                              data-iso={c.country_shortname || ""}
                             >
-                              {c.country_sortname
-                                ? `${toFlag(c.country_sortname)} ${c.country_sortname} ${c.country_phonecode} — ${c.country_name}`
+                              {c.country_shortname
+                                ? `${c.country_shortname} ${c.country_phonecode} — ${c.country_name}`
                                 : `${c.country_phonecode} — ${c.country_name}`}
                             </option>
                           ))}
