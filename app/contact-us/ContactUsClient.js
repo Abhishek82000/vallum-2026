@@ -274,7 +274,7 @@ export default function ContactUsClient() {
 
       {/* Hero */}
       <section className="vc-hero">
-        <div className="vc-hero-inner">
+        <div className="container">
           <div className="vc-eyebrow">Vallum Capital Advisors</div>
           <h1>Let's Have a<br /><em>Thoughtful Conversation</em></h1>
           <p>Choosing an investment manager is a long-term decision. We welcome a measured discussion — no obligation, only clarity.</p>
@@ -283,298 +283,310 @@ export default function ContactUsClient() {
 
       {/* Main */}
       <section>
-        <div className="vc-main">
+        <div className="container">
+          <div className="vc-main">
 
-          {/* Left panel */}
-          <div className="vc-info-panel">
-            <p className="vc-info-tagline">Begin with a<br /><em>single conversation.</em></p>
-            <p className="vc-info-desc">If you'd like to understand how we work, ask questions, or explore alignment — we're here. Every inquiry is handled with discretion and care.</p>
-            <div className="vc-divider" />
-            <div className="vc-contact-cards">
-              {[
-                {
-                  label:"Office",
-                  value:"B-403, Kanakia Wall Street, Andheri Kurla Road,\nChakala MIDC, Mumbai — 400 093",
-                  icon:<><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></>,
-                },
-                {
-                  label:"Phone",
-                  value:"+91 8655664539",
-                  icon:<path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>,
-                },
-                {
-                  label:"Email",
-                  value:"connect.vallum@vallum.in",
-                  icon:<path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>,
-                },
-              ].map(c => (
-                <div key={c.label} className="vc-contact-card">
-                  <div className="vc-card-icon"><svg viewBox="0 0 24 24">{c.icon}</svg></div>
-                  <div>
-                    <p className="vc-card-label">{c.label}</p>
-                    <p className="vc-card-value" style={{whiteSpace:"pre-line"}}>{c.value}</p>
+            {/* Left panel */}
+            <div className="vc-info-panel">
+              <p className="vc-info-tagline">Begin with a<br /><em>single conversation.</em></p>
+              <p className="vc-info-desc">If you'd like to understand how we work, ask questions, or explore alignment — we're here. Every inquiry is handled with discretion and care.</p>
+              <div className="vc-divider" />
+              <div className="vc-contact-cards">
+                {[
+                  {
+                    label:"Office",
+                    value:"B-403, Kanakia Wall Street, Andheri Kurla Road,\nChakala MIDC, Mumbai — 400 093",
+                    icon:<><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></>,
+                  },
+                  {
+                    label:"Phone",
+                    value:"+91 8655664539",
+                    icon:<path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>,
+                  },
+                  {
+                    label:"Email",
+                    value:"connect.vallum@vallum.in",
+                    icon:<path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>,
+                  },
+                  {
+                    label:"Client Servicing",
+                    value:"+91 8655966290",
+                    icon:<path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>,
+                  },
+                  {
+                    label:"Careers & Opportunities",
+                    value:"hr@vallum.in",
+                    icon:<path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>,
+                  },
+                ].map(c => (
+                  <div key={c.label} className="vc-contact-card">
+                    <div className="vc-card-icon"><svg viewBox="0 0 24 24">{c.icon}</svg></div>
+                    <div>
+                      <p className="vc-card-label">{c.label}</p>
+                      <p className="vc-card-value" style={{whiteSpace:"pre-line"}}>{c.value}</p>
+                    </div>
                   </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Form Card */}
-          <div className="vc-form-card">
-            <div className="vc-form-header">
-              <p className="vc-form-header-title">Send Us a Message</p>
+                ))}
+              </div>
             </div>
 
-            <div className="vc-form-body">
-              <div className="vc-progress-wrap">
-                <div className="vc-progress-bar">
-                  <div className="vc-progress-fill" style={{width:`${progress}%`}} />
-                </div>
-                <p className="vc-progress-label">{progress}% complete</p>
+            {/* Form Card */}
+            <div className="vc-form-card">
+              <div className="vc-form-header">
+                <p className="vc-form-header-title">Send Us a Message</p>
               </div>
 
-              <form onSubmit={handleSubmit} noValidate>
-
-                {/* ── Visitor Type ── */}
-                <div className="vc-section-label">Enquiry Type</div>
-                <div className="vc-row vc-row-1" style={{marginBottom:20}}>
-                  <div className="vc-field">
-                    <div className="vc-radio-group">
-                      {visitorOptions.map(opt => (
-                        <button
-                          key={opt.value}
-                          type="button"
-                          className={`vc-radio-pill${form.contact_profile === opt.value ? " selected" : ""}`}
-                          onClick={() => handleRadio(opt.value)}
-                        >
-                          <span className="vc-radio-dot" />
-                          {opt.label}
-                        </button>
-                      ))}
-                    </div>
-                    <FieldError show={touched.contact_profile} msg={errors.contact_profile} />
+              <div className="vc-form-body">
+                <div className="vc-progress-wrap">
+                  <div className="vc-progress-bar">
+                    <div className="vc-progress-fill" style={{width:`${progress}%`}} />
                   </div>
+                  <p className="vc-progress-label">{progress}% complete</p>
                 </div>
 
-                {/* Conditional: Investment Strategy (optional) for profile 1 & 2 */}
-                <div className={`vc-conditional${showStrategy ? " open" : ""}`}>
-                  <div className="vc-cond-inner">
+                <form onSubmit={handleSubmit} noValidate>
+
+                  {/* ── Visitor Type ── */}
+                  <div className="vc-section-label">Enquiry Type</div>
+                  <div className="vc-row vc-row-1" style={{marginBottom:20}}>
                     <div className="vc-field">
-                      <label className="vc-label">Investment Strategy <span className="vc-opt">(optional)</span></label>
-                      <select className="vc-select" name="business" value={form.business} onChange={handleChange}>
-                        <option value="">Select Strategy</option>
-                        <option value="Vallum India Discovery Strategy (VDIS)">Vallum India Discovery Strategy (VIDS)</option>
-                        <option value="Vallum J.A.N. Principles">Vallum J.A.N. Principles</option>
-                        <option value="Vallum India Multi-Activa">Vallum India Multi-Activa</option>
+                      <div className="vc-radio-group">
+                        {visitorOptions.map(opt => (
+                          <button
+                            key={opt.value}
+                            type="button"
+                            className={`vc-radio-pill${form.contact_profile === opt.value ? " selected" : ""}`}
+                            onClick={() => handleRadio(opt.value)}
+                          >
+                            <span className="vc-radio-dot" />
+                            {opt.label}
+                          </button>
+                        ))}
+                      </div>
+                      <FieldError show={touched.contact_profile} msg={errors.contact_profile} />
+                    </div>
+                  </div>
+
+                  {/* Conditional: Investment Strategy (optional) for profile 1 & 2 */}
+                  <div className={`vc-conditional${showStrategy ? " open" : ""}`}>
+                    <div className="vc-cond-inner">
+                      <div className="vc-field">
+                        <label className="vc-label">Investment Strategy <span className="vc-opt">(optional)</span></label>
+                        <select className="vc-select" name="business" value={form.business} onChange={handleChange}>
+                          <option value="">Select Strategy</option>
+                          <option value="Vallum India Discovery Strategy (VDIS)">Vallum India Discovery Strategy (VIDS)</option>
+                          <option value="Vallum J.A.N. Principles">Vallum J.A.N. Principles</option>
+                          <option value="Vallum India Multi-Activa">Vallum India Multi-Activa</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Conditional: Others specify (optional) for profile 8 */}
+                  <div className={`vc-conditional${showOthers ? " open" : ""}`}>
+                    <div className="vc-cond-inner">
+                      <div className="vc-field">
+                        <label className="vc-label">Please specify <span className="vc-opt">(optional)</span></label>
+                        <input
+                          className="vc-input"
+                          name="others_visitor"
+                          value={form.others_visitor}
+                          onChange={handleChange}
+                          onBlur={handleBlur}
+                          placeholder="Describe your visitor type"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* ── Personal Details ── */}
+                  <div className="vc-section-label" style={{marginTop:8}}>Your Details</div>
+                  <div className="vc-row vc-row-2">
+                    <div className="vc-field">
+                      <label className="vc-label">Full Name <span className="vc-required">*</span></label>
+                      <input
+                        className={ic("contact_name")}
+                        name="contact_name"
+                        value={form.contact_name}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        placeholder="John Doe"
+                        autoComplete="name"
+                      />
+                      <FieldError show={touched.contact_name} msg={errors.contact_name} />
+                    </div>
+                    <div className="vc-field">
+                      <label className="vc-label">Email Address <span className="vc-required">*</span></label>
+                      <input
+                        className={ic("contact_email")}
+                        type="email"
+                        name="contact_email"
+                        value={form.contact_email}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        placeholder="you@example.com"
+                        autoComplete="email"
+                      />
+                      <FieldError show={touched.contact_email} msg={errors.contact_email} />
+                    </div>
+                  </div>
+
+                  <div className="vc-row vc-row-2">
+                    {/* Phone with flag + code */}
+                    <div className="vc-field">
+                      <label className="vc-label">Phone Number <span className="vc-required">*</span></label>
+                      <div className="vc-phone-group">
+                        <div className="vc-phone-flag-wrap">
+                          <div className="vc-phone-flag-display">
+                            <img
+                              src={flagImg}
+                              alt={form.contact_phoneflag}
+                              className="pflag-img"
+                              onError={(e) => e.target.style.display = "none"}
+                            />
+                            <span className="pcode">{form.contact_phonecode} ({form.contact_phoneflag})</span>
+                            <span className="parrow">▼</span>
+                          </div>
+                          {/* Invisible native select overlays the display */}
+                          <select
+                            className="vc-phone-flag-select"
+                            value={form.contact_phonecode}
+                            onChange={handlePhoneCode}
+                            aria-label="Country code"
+                          >
+                            <option value="+91" data-iso="IN">IN +91 — India</option>
+                            {countries.map(c => (
+                              <option
+                                key={c.country_id}
+                                value={c.country_phonecode}
+                                data-iso={c.country_shortname || ""}
+                              >
+                                {c.country_shortname
+                                  ? `${c.country_shortname} ${c.country_phonecode} — ${c.country_name}`
+                                  : `${c.country_phonecode} — ${c.country_name}`}
+                              </option>
+                            ))}
+                          </select>
+                        </div>
+                        <input
+                          className={`vc-input vc-phone-input${touched.contact_mobile ? (errors.contact_mobile ? " error" : " valid") : ""}`}
+                          type="number"
+                          name="contact_mobile"
+                          value={form.contact_mobile}
+                          onChange={handleChange}
+                          onBlur={handleBlur}
+                          placeholder="XXXXX XXXXX"
+                          maxLength={12}
+                          inputMode="numeric"
+                          autoComplete="tel"
+                        />
+                      </div>
+                      <FieldError show={touched.contact_mobile} msg={errors.contact_mobile} />
+                    </div>
+
+                    {/* Country */}
+                    <div className="vc-field">
+                      <label className="vc-label">Country <span className="vc-required">*</span></label>
+                      <select
+                        className={sc("contact_country")}
+                        name="contact_country"
+                        value={form.contact_country}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                      >
+                        <option value="">Select Country</option>
+                        {countries.map(c => (
+                          <option key={c.country_id} value={c.country_id}>{c.country_name}</option>
+                        ))}
+                      </select>
+                      <FieldError show={touched.contact_country} msg={errors.contact_country} />
+                    </div>
+                  </div>
+
+                  <div className="vc-row vc-row-2">
+                    {/* State: required only when states are loaded */}
+                    <div className="vc-field">
+                      <label className="vc-label">
+                        State{" "}
+                        {statesLoaded
+                          ? <span className="vc-required">*</span>
+                          : <span className="vc-opt">(optional)</span>}
+                      </label>
+                      <select
+                        className={sc("contact_state")}
+                        name="contact_state"
+                        value={form.contact_state}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        disabled={!statesLoaded}
+                      >
+                        <option value="">{statesLoaded ? "Select State" : "Select country first"}</option>
+                        {states.map(s => <option key={s.state_id} value={s.state_id}>{s.state_name}</option>)}
+                      </select>
+                      <FieldError show={touched.contact_state} msg={errors.contact_state} />
+                    </div>
+
+                    {/* City: always optional */}
+                    <div className="vc-field">
+                      <label className="vc-label">City <span className="vc-opt">(optional)</span></label>
+                      <select
+                        className="vc-select"
+                        name="contact_city"
+                        value={form.contact_city}
+                        onChange={handleChange}
+                        disabled={!citiesLoaded}
+                      >
+                        <option value="">{citiesLoaded ? "Select City" : "Select state first"}</option>
+                        {cities.map(c => <option key={c.cities_id} value={c.cities_id}>{c.cities_name}</option>)}
                       </select>
                     </div>
                   </div>
-                </div>
 
-                {/* Conditional: Others specify (optional) for profile 8 */}
-                <div className={`vc-conditional${showOthers ? " open" : ""}`}>
-                  <div className="vc-cond-inner">
+                  {/* ── Message ── */}
+                  <div className="vc-section-label" style={{marginTop:8}}>Your Message</div>
+                  <div className="vc-row vc-row-1">
                     <div className="vc-field">
-                      <label className="vc-label">Please specify <span className="vc-opt">(optional)</span></label>
-                      <input
-                        className="vc-input"
-                        name="others_visitor"
-                        value={form.others_visitor}
+                      <label className="vc-label">Message <span className="vc-required">*</span></label>
+                      <textarea
+                        className={`vc-textarea${touched.contact_message ? (errors.contact_message ? " error" : " valid") : ""}`}
+                        rows={4}
+                        name="contact_message"
+                        value={form.contact_message}
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        placeholder="Describe your visitor type"
+                        placeholder="Share your thoughts, questions, or any specific context you'd like us to know…"
                       />
+                      <p className={`vc-char-count${form.contact_message.length > 0 && form.contact_message.length < 20 ? " warn" : ""}`}>
+                        {form.contact_message.length} chars
+                        {form.contact_message.length > 0 && form.contact_message.length < 20
+                          ? ` — ${20 - form.contact_message.length} more needed`
+                          : form.contact_message.length >= 20 ? " ✓" : " (min 20)"}
+                      </p>
+                      <FieldError show={touched.contact_message} msg={errors.contact_message} />
                     </div>
                   </div>
-                </div>
 
-                {/* ── Personal Details ── */}
-                <div className="vc-section-label" style={{marginTop:8}}>Your Details</div>
-                <div className="vc-row vc-row-2">
-                  <div className="vc-field">
-                    <label className="vc-label">Full Name <span className="vc-required">*</span></label>
-                    <input
-                      className={ic("contact_name")}
-                      name="contact_name"
-                      value={form.contact_name}
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      placeholder="John Doe"
-                      autoComplete="name"
-                    />
-                    <FieldError show={touched.contact_name} msg={errors.contact_name} />
-                  </div>
-                  <div className="vc-field">
-                    <label className="vc-label">Email Address <span className="vc-required">*</span></label>
-                    <input
-                      className={ic("contact_email")}
-                      type="email"
-                      name="contact_email"
-                      value={form.contact_email}
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      placeholder="you@example.com"
-                      autoComplete="email"
-                    />
-                    <FieldError show={touched.contact_email} msg={errors.contact_email} />
-                  </div>
-                </div>
-
-                <div className="vc-row vc-row-2">
-                  {/* Phone with flag + code */}
-                  <div className="vc-field">
-                    <label className="vc-label">Phone Number <span className="vc-required">*</span></label>
-                    <div className="vc-phone-group">
-                      <div className="vc-phone-flag-wrap">
-                        <div className="vc-phone-flag-display">
-                          <img
-                            src={flagImg}
-                            alt={form.contact_phoneflag}
-                            className="pflag-img"
-                            onError={(e) => e.target.style.display = "none"}
-                          />
-                          <span className="pcode">{form.contact_phonecode} ({form.contact_phoneflag})</span>
-                          <span className="parrow">▼</span>
-                        </div>
-                        {/* Invisible native select overlays the display */}
-                        <select
-                          className="vc-phone-flag-select"
-                          value={form.contact_phonecode}
-                          onChange={handlePhoneCode}
-                          aria-label="Country code"
-                        >
-                          <option value="+91" data-iso="IN">IN +91 — India</option>
-                          {countries.map(c => (
-                            <option
-                              key={c.country_id}
-                              value={c.country_phonecode}
-                              data-iso={c.country_shortname || ""}
-                            >
-                              {c.country_shortname
-                                ? `${c.country_shortname} ${c.country_phonecode} — ${c.country_name}`
-                                : `${c.country_phonecode} — ${c.country_name}`}
-                            </option>
-                          ))}
-                        </select>
-                      </div>
-                      <input
-                        className={`vc-input vc-phone-input${touched.contact_mobile ? (errors.contact_mobile ? " error" : " valid") : ""}`}
-                        type="number"
-                        name="contact_mobile"
-                        value={form.contact_mobile}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                        placeholder="XXXXX XXXXX"
-                        maxLength={12}
-                        inputMode="numeric"
-                        autoComplete="tel"
-                      />
+                  {/* Submit */}
+                  <button className="vc-submit-btn" type="submit" disabled={status.loading}>
+                    <div className="vc-submit-inner">
+                      {status.loading
+                        ? <><div className="vc-spinner" /> Processing…</>
+                        : <><span className="vc-submit-line" />Let's Connect<span className="vc-submit-line" /></>}
                     </div>
-                    <FieldError show={touched.contact_mobile} msg={errors.contact_mobile} />
-                  </div>
+                  </button>
 
-                  {/* Country */}
-                  <div className="vc-field">
-                    <label className="vc-label">Country <span className="vc-required">*</span></label>
-                    <select
-                      className={sc("contact_country")}
-                      name="contact_country"
-                      value={form.contact_country}
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                    >
-                      <option value="">Select Country</option>
-                      {countries.map(c => (
-                        <option key={c.country_id} value={c.country_id}>{c.country_name}</option>
-                      ))}
-                    </select>
-                    <FieldError show={touched.contact_country} msg={errors.contact_country} />
-                  </div>
-                </div>
-
-                <div className="vc-row vc-row-2">
-                  {/* State: required only when states are loaded */}
-                  <div className="vc-field">
-                    <label className="vc-label">
-                      State{" "}
-                      {statesLoaded
-                        ? <span className="vc-required">*</span>
-                        : <span className="vc-opt">(optional)</span>}
-                    </label>
-                    <select
-                      className={sc("contact_state")}
-                      name="contact_state"
-                      value={form.contact_state}
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      disabled={!statesLoaded}
-                    >
-                      <option value="">{statesLoaded ? "Select State" : "Select country first"}</option>
-                      {states.map(s => <option key={s.state_id} value={s.state_id}>{s.state_name}</option>)}
-                    </select>
-                    <FieldError show={touched.contact_state} msg={errors.contact_state} />
-                  </div>
-
-                  {/* City: always optional */}
-                  <div className="vc-field">
-                    <label className="vc-label">City <span className="vc-opt">(optional)</span></label>
-                    <select
-                      className="vc-select"
-                      name="contact_city"
-                      value={form.contact_city}
-                      onChange={handleChange}
-                      disabled={!citiesLoaded}
-                    >
-                      <option value="">{citiesLoaded ? "Select City" : "Select state first"}</option>
-                      {cities.map(c => <option key={c.cities_id} value={c.cities_id}>{c.cities_name}</option>)}
-                    </select>
-                  </div>
-                </div>
-
-                {/* ── Message ── */}
-                <div className="vc-section-label" style={{marginTop:8}}>Your Message</div>
-                <div className="vc-row vc-row-1">
-                  <div className="vc-field">
-                    <label className="vc-label">Message <span className="vc-required">*</span></label>
-                    <textarea
-                      className={`vc-textarea${touched.contact_message ? (errors.contact_message ? " error" : " valid") : ""}`}
-                      rows={4}
-                      name="contact_message"
-                      value={form.contact_message}
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      placeholder="Share your thoughts, questions, or any specific context you'd like us to know…"
-                    />
-                    <p className={`vc-char-count${form.contact_message.length > 0 && form.contact_message.length < 20 ? " warn" : ""}`}>
-                      {form.contact_message.length} chars
-                      {form.contact_message.length > 0 && form.contact_message.length < 20
-                        ? ` — ${20 - form.contact_message.length} more needed`
-                        : form.contact_message.length >= 20 ? " ✓" : " (min 20)"}
-                    </p>
-                    <FieldError show={touched.contact_message} msg={errors.contact_message} />
-                  </div>
-                </div>
-
-                {/* Submit */}
-                <button className="vc-submit-btn" type="submit" disabled={status.loading}>
-                  <div className="vc-submit-inner">
-                    {status.loading
-                      ? <><div className="vc-spinner" /> Processing…</>
-                      : <><span className="vc-submit-line" />Let's Connect<span className="vc-submit-line" /></>}
-                  </div>
-                </button>
-
-                {status.message && (
-                  <div className={`vc-alert vc-alert-${status.type === "success" ? "success" : "error"}`}>
-                    <svg className="vc-alert-icon" viewBox="0 0 20 20" fill="currentColor">
-                      {status.type === "success"
-                        ? <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
-                        : <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"/>}
-                    </svg>
-                    {status.message}
-                  </div>
-                )}
-              </form>
+                  {status.message && (
+                    <div className={`vc-alert vc-alert-${status.type === "success" ? "success" : "error"}`}>
+                      <svg className="vc-alert-icon" viewBox="0 0 20 20" fill="currentColor">
+                        {status.type === "success"
+                          ? <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                          : <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"/>}
+                      </svg>
+                      {status.message}
+                    </div>
+                  )}
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -582,14 +594,16 @@ export default function ContactUsClient() {
 
       {/* Map */}
       <section className="vc-map-section">
-        <div className="vc-map-inner">
-          <div className="vc-map-frame">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.827797267082!2d72.85875567368157!3d19.115208982097435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9213e321aa3%3A0xa293d8a0155390ed!2sVallum%20Capital%20Advisors%20Private%20Limited!5e0!3m2!1sen!2sin!4v1772627530765!5m2!1sen!2sin"
-              allowFullScreen=""
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Vallum Capital Office"
-            />
+        <div className="container">
+          <div className="vc-map-inner">
+            <div className="vc-map-frame">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.827797267082!2d72.85875567368157!3d19.115208982097435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9213e321aa3%3A0xa293d8a0155390ed!2sVallum%20Capital%20Advisors%20Private%20Limited!5e0!3m2!1sen!2sin!4v1772627530765!5m2!1sen!2sin"
+                allowFullScreen=""
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Vallum Capital Office"
+              />
+            </div>
           </div>
         </div>
       </section>
