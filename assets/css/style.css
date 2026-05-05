@@ -5758,7 +5758,7 @@ body .vertical-centered-box {
 
   /* ── Logo ── */
   .vl-logo img {
-    height: 44px;
+    height: 36px;
     width: auto;
     display: block;
   }
@@ -5779,7 +5779,7 @@ body .vertical-centered-box {
     display: flex;
     align-items: center;
     gap: 5px;
-    padding: 8px 14px;
+    padding: 8px;
     font-family: var(--font-body);
     font-size: 14.5px;
     font-weight: 500;
