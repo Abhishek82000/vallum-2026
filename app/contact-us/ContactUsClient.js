@@ -113,7 +113,7 @@ export default function ContactUsClient() {
   ];
 
   // Backend expects contact_profile in:1,2,3,4
-  const profileToBackend = { "1":"1","2":"2","3":"2","4":"3","5":"1","6":"4","7":"4","8":"4" };
+  const profileToBackend = { "1":"1","2":"2","3":"3","4":"4","5":"5","6":"6","7":"7","8":"8" };
 
   /* ─── Progress ─── */
   const requiredKeys = useMemo(() => {
